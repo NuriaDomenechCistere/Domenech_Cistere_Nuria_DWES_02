@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Reserva de Vehículo</title>
+    <style>
+        body{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Reserva un vehículo</h1>
+    <form action="reserva.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+        <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido">
+        <br><br>
+
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni"><br><br>
+
+        <label for="modelo">Vehículo:</label>
+        <select id="modelo" name="modelo">
+            <option value="Lancia Stratos">Lancia Stratos</option>
+            <option value="Audi Quattro">Audi Quattro</option>
+            <option value="Ford Escort RS1800">Ford Escort RS1800</option>
+            <option value="Subaru Impreza 555">Subaru Impreza 555</option>
+        </select><br><br>
+
+        <label for="fecha_inicio">Fecha de inicio:</label>
+        <input type="date" id="fecha_inicio" name="fecha_inicio"><br><br>
+
+        <label for="duracion">Días de la reserva:</label>
+        <input type="number" id="duracion" name="duracion"><br><br>
+
+        <input type="submit" value="Reservar">
+    </form>
+</body>
+</html>
